@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MobilePage extends StatefulWidget {
   const MobilePage({super.key});
@@ -41,7 +42,7 @@ class _MobilePageState extends State<MobilePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(
-                        flex: 5,
+                        flex: 9,
                         child: Container(
                             width: double.maxFinite,
                             child: Image.asset(kIsWeb ? "images/sample.png" : "assets/images/sample.png",
@@ -51,7 +52,7 @@ class _MobilePageState extends State<MobilePage> {
                       ),
                       // 상품 정보 -> 폰트 크기 때문에 사진이 더 세로로 축소
                       Expanded(
-                        flex: 2,
+                        flex: 5,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
@@ -61,20 +62,20 @@ class _MobilePageState extends State<MobilePage> {
                                 "우희 공작소",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 14,
+                                  fontSize: 10.sp,
                                 ),
                               ),
-                              SizedBox(height: 4),
+                              SizedBox(height: 2),
                               Text(
                                 "NEURADERM 완전 수분 가득 촉촉하게 물광 토너 1+1 100ml",
                                 style: TextStyle(
                                   color: Colors.grey[600],
-                                  fontSize: 12,
+                                  fontSize: 8.sp,
                                 ),
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
                               ),
-                              SizedBox(height: 8),
+                              SizedBox(height: 3),
                               Row(
                                 children: [
                                   Text(
@@ -82,33 +83,33 @@ class _MobilePageState extends State<MobilePage> {
                                     style: TextStyle(
                                       color: Colors.red,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 16,
+                                      fontSize: 10.sp,
                                     ),
                                   ),
-                                  SizedBox(width: 4),
+                                  SizedBox(width: 2),
                                   Text(
                                     "75,000원",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 16,
+                                      fontSize: 10.sp,
                                     ),
                                   ),
                                 ],
                               ),
-                              SizedBox(height: 4),
+                              SizedBox(height: 2),
                               Row(
                                 children: [
                                   Icon(
                                     Icons.star,
                                     color: Colors.orange,
-                                    size: 14,
+                                    size: 10.sp,
                                   ),
                                   SizedBox(width: 4),
                                   Text(
                                     "4.8 (1,580)",
                                     style: TextStyle(
                                       color: Colors.grey,
-                                      fontSize: 12,
+                                      fontSize: 8.sp,
                                     ),
                                   ),
                                 ],
