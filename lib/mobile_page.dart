@@ -29,7 +29,7 @@ class _MobilePageState extends State<MobilePage> {
                 crossAxisCount: 2, // 한 행에 2개의 아이템
                 crossAxisSpacing: 20, // 아이템 간 가로 간격
                 mainAxisSpacing: 20, // 아이템 간 세로 간격
-                childAspectRatio: 0.6, // 아이템의 가로/세로 비율
+                childAspectRatio: 1/2, // 아이템의 가로/세로 비율
               ),
               itemCount: 8, // 총 아이템 개수
               itemBuilder: (context, index) {
@@ -42,7 +42,7 @@ class _MobilePageState extends State<MobilePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(
-                        flex: 9,
+                        flex: 7,
                         child: Container(
                             width: double.maxFinite,
                             child: Image.asset(kIsWeb ? "images/sample.png" : "assets/images/sample.png",
@@ -62,20 +62,20 @@ class _MobilePageState extends State<MobilePage> {
                                 "우희 공작소",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 10.sp,
+                                  fontSize: 14,
                                 ),
                               ),
-                              SizedBox(height: 2),
+                              SizedBox(height: 4),
                               Text(
                                 "NEURADERM 완전 수분 가득 촉촉하게 물광 토너 1+1 100ml",
                                 style: TextStyle(
                                   color: Colors.grey[600],
-                                  fontSize: 8.sp,
+                                  fontSize: 12,
                                 ),
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
                               ),
-                              SizedBox(height: 3),
+                              SizedBox(height: 8),
                               Row(
                                 children: [
                                   Text(
@@ -83,33 +83,33 @@ class _MobilePageState extends State<MobilePage> {
                                     style: TextStyle(
                                       color: Colors.red,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 10.sp,
+                                      fontSize: 16,
                                     ),
                                   ),
-                                  SizedBox(width: 2),
+                                  SizedBox(width: 4),
                                   Text(
                                     "75,000원",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 10.sp,
+                                      fontSize: 16,
                                     ),
                                   ),
                                 ],
                               ),
-                              SizedBox(height: 2),
+                              SizedBox(height: 4),
                               Row(
                                 children: [
                                   Icon(
                                     Icons.star,
                                     color: Colors.orange,
-                                    size: 10.sp,
+                                    size: 14,
                                   ),
                                   SizedBox(width: 4),
                                   Text(
                                     "4.8 (1,580)",
                                     style: TextStyle(
                                       color: Colors.grey,
-                                      fontSize: 8.sp,
+                                      fontSize: 12,
                                     ),
                                   ),
                                 ],
