@@ -1,4 +1,4 @@
-# responsive_app
+# responsive
 
 A new Flutter project.
 

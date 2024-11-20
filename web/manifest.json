@@ -1,6 +1,6 @@
 {
-    "name": "responsive_app",
-    "short_name": "responsive_app",
+    "name": "responsive",
+    "short_name": "responsive",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
