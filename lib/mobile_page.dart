@@ -41,6 +41,7 @@ class _MobilePageState extends State<MobilePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(
+                        flex: 5,
                         child: Container(
                             width: double.maxFinite,
                             child: Image.asset(kIsWeb ? "images/sample.png" : "assets/images/sample.png",
@@ -48,69 +49,72 @@ class _MobilePageState extends State<MobilePage> {
                             ),
                         ),
                       ),
-                      // 상품 정보
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "우희 공작소",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 14,
+                      // 상품 정보 -> 폰트 크기 때문에 사진이 더 세로로 축소
+                      Expanded(
+                        flex: 2,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "우희 공작소",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 14,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 4),
-                            Text(
-                              "NEURADERM 완전 수분 가득 촉촉하게 물광 토너 1+1 100ml",
-                              style: TextStyle(
-                                color: Colors.grey[600],
-                                fontSize: 12,
+                              SizedBox(height: 4),
+                              Text(
+                                "NEURADERM 완전 수분 가득 촉촉하게 물광 토너 1+1 100ml",
+                                style: TextStyle(
+                                  color: Colors.grey[600],
+                                  fontSize: 12,
+                                ),
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
                               ),
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                            SizedBox(height: 8),
-                            Row(
-                              children: [
-                                Text(
-                                  "84%",
-                                  style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16,
+                              SizedBox(height: 8),
+                              Row(
+                                children: [
+                                  Text(
+                                    "84%",
+                                    style: TextStyle(
+                                      color: Colors.red,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
                                   ),
-                                ),
-                                SizedBox(width: 4),
-                                Text(
-                                  "75,000원",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16,
+                                  SizedBox(width: 4),
+                                  Text(
+                                    "75,000원",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
                                   ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(height: 4),
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orange,
-                                  size: 14,
-                                ),
-                                SizedBox(width: 4),
-                                Text(
-                                  "4.8 (1,580)",
-                                  style: TextStyle(
-                                    color: Colors.grey,
-                                    fontSize: 12,
+                                ],
+                              ),
+                              SizedBox(height: 4),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orange,
+                                    size: 14,
                                   ),
-                                ),
-                              ],
-                            ),
-                          ],
+                                  SizedBox(width: 4),
+                                  Text(
+                                    "4.8 (1,580)",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],
