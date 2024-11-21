@@ -54,7 +54,7 @@ class _MobilePage2State extends State<MobilePage2> {
               const SizedBox(height: 10),
               // 상품 리스트 (가로 스크롤)
               SizedBox(
-                height: 210.h,
+                height: kIsWeb ? 270 : 210.h,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 8, // 총 아이템 개수
@@ -67,7 +67,7 @@ class _MobilePage2State extends State<MobilePage2> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
-                            flex: kIsWeb ? 3 : 3,
+                            flex: kIsWeb ? 1 : 3,
                             child: Container(
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(4),
@@ -79,7 +79,7 @@ class _MobilePage2State extends State<MobilePage2> {
                           ),
                           // 상품 정보 -> 폰트 크기 때문에 사진이 더 세로로 축소
                           Expanded(
-                            flex: kIsWeb ? 4 : 4 ,
+                            flex: kIsWeb ? 1 : 4 ,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
