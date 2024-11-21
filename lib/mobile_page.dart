@@ -114,7 +114,22 @@ class _MobilePageState extends State<MobilePage> {
                                   ),
                                 ],
                               ),
-
+                              SizedBox(height: 4),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.heart_broken,
+                                    color: Colors.red,
+                                    size: 14,
+                                  ),
+                                  SizedBox(width:12),
+                                  Icon(
+                                    Icons.card_travel,
+                                    color: Colors.black26,
+                                    size: 14,
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         ),
