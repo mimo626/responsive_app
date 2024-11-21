@@ -64,7 +64,7 @@ class _MobilePageState extends State<MobilePage> {
                                 "우희 공작소",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 14,
+                                  fontSize: 12,
                                 ),
                               ),
                               SizedBox(height: 4),
@@ -77,15 +77,26 @@ class _MobilePageState extends State<MobilePage> {
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
                               ),
-                              SizedBox(height: 8),
+                              SizedBox(height: 4),
+                              Text(
+                                "100,000",
+                                style: TextStyle(
+                                    decoration: TextDecoration.lineThrough,  // 줄 그기
+                                    decorationColor: Colors.grey,  // 줄 색상
+                                    decorationThickness: 2,  // 줄 두께olor: Colors.grey,
+                                    fontSize: 10,
+                                    color: Colors.grey
+                                ),
+                              ),
+                              SizedBox(height: 2),
                               Row(
                                 children: [
                                   Text(
-                                    "84%",
+                                    "25%",
                                     style: TextStyle(
                                       color: Colors.red,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 16,
+                                      fontSize: 14,
                                     ),
                                   ),
                                   SizedBox(width: 4),
@@ -93,7 +104,7 @@ class _MobilePageState extends State<MobilePage> {
                                     "75,000원",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 16,
+                                      fontSize: 14,
                                     ),
                                   ),
                                 ],
