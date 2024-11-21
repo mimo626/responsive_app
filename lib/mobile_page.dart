@@ -14,6 +14,7 @@ class _MobilePageState extends State<MobilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: Text("Responsive"),
         centerTitle: true,
       ),
