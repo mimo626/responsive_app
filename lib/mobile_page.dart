@@ -12,6 +12,7 @@ class MobilePage extends StatefulWidget {
 class _MobilePageState extends State<MobilePage> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -40,7 +41,7 @@ class _MobilePageState extends State<MobilePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(
-                        flex: 7,
+                        flex: kIsWeb ? 2 : 7,
                         child: Container(
                             width: double.maxFinite,
                             child: ClipRRect(
@@ -53,7 +54,7 @@ class _MobilePageState extends State<MobilePage> {
                       ),
                       // 상품 정보 -> 폰트 크기 때문에 사진이 더 세로로 축소
                       Expanded(
-                        flex: 6,
+                        flex: kIsWeb ? 1 : 6 ,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
