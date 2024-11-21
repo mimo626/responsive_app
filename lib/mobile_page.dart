@@ -19,7 +19,7 @@ class _MobilePageState extends State<MobilePage> {
       ),
       body: Center(
         child: Container(
-          color: Colors.black,
+          color: Colors.white,
           // 자식 위젯이 Expanded이므로 부모 위젯을 따라 무한히 커지는 것을 막기 위해 최대 크기 지정
           constraints: BoxConstraints(maxWidth: 600,),
           child: Padding(
@@ -29,15 +29,12 @@ class _MobilePageState extends State<MobilePage> {
                 crossAxisCount: 2, // 한 행에 2개의 아이템
                 crossAxisSpacing: 20, // 아이템 간 가로 간격
                 mainAxisSpacing: 20, // 아이템 간 세로 간격
-                childAspectRatio: 1/2, // 아이템의 가로/세로 비율
+                childAspectRatio: 0.49, // 아이템의 가로/세로 비율
               ),
               itemCount: 8, // 총 아이템 개수
               itemBuilder: (context, index) {
                 return Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(4),
-                  ),
+                  color: Colors.white,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -45,14 +42,17 @@ class _MobilePageState extends State<MobilePage> {
                         flex: 7,
                         child: Container(
                             width: double.maxFinite,
-                            child: Image.asset(kIsWeb ? "images/sample.png" : "assets/images/sample.png",
-                              fit: BoxFit.cover,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(4),
+                              child: Image.asset(kIsWeb ? "images/sample.png" : "assets/images/sample.png",
+                                fit: BoxFit.cover,
+                              ),
                             ),
                         ),
                       ),
                       // 상품 정보 -> 폰트 크기 때문에 사진이 더 세로로 축소
                       Expanded(
-                        flex: 5,
+                        flex: 6,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
@@ -114,6 +114,7 @@ class _MobilePageState extends State<MobilePage> {
                                   ),
                                 ],
                               ),
+
                             ],
                           ),
                         ),
