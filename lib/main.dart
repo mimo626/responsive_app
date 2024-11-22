@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:responsive/mobile_page.dart';
-import 'package:responsive/mobile_page2.dart';
+import 'package:responsive/gridview.dart';
+import 'package:responsive/listview_horizontal.dart';
+import 'package:responsive/listview_vertical.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
               primarySwatch: Colors.deepPurple
           ),
-          home: MobilePage(),
+          home: ListViewVertical(),
         );
       },
     );
