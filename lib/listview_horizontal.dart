@@ -1,15 +1,14 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class MobilePage2 extends StatefulWidget {
-  const MobilePage2({super.key});
+class ListViewHorizontal extends StatefulWidget {
+  const ListViewHorizontal({super.key});
 
   @override
-  State<MobilePage2> createState() => _MobilePage2State();
+  State<ListViewHorizontal> createState() => _ListViewHorizontalState();
 }
 
-class _MobilePage2State extends State<MobilePage2> {
+class _ListViewHorizontalState extends State<ListViewHorizontal> {
   @override
   Widget build(BuildContext context) {
     // 화면의 가로 길이와 세로 길이 가져오기

@@ -2,14 +2,14 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class MobilePage extends StatefulWidget {
-  const MobilePage({super.key});
+class GridView extends StatefulWidget {
+  const GridView({super.key});
 
   @override
-  State<MobilePage> createState() => _MobilePageState();
+  State<GridView> createState() => _GridViewState();
 }
 
-class _MobilePageState extends State<MobilePage> {
+class _GridViewState extends State<GridView> {
   @override
   Widget build(BuildContext context) {
 
